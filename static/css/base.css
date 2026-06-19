@@ -56,6 +56,11 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -77,5 +82,23 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .header-container {
+        padding-top: 116px;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .shop-now-button {
+        min-width: 220px;
     }
 }
