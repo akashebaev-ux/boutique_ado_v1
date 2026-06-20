@@ -95,12 +95,14 @@ body {
 }
 
 @media (max-width: 991px) {
+    .header-container {
+        padding-top: 0px;
+    }
+    .col-9.col-md-6.my-auto {
+        padding-top: 116px;
+    }
     body {
         height: calc(100vh - 116px);
-    }
-
-    .header-container {
-        padding-top: 116px;
     }
 
     .display-4 {
@@ -126,5 +128,15 @@ body {
     }
     .navbar {
         padding: 0.5rem 0.5rem;
+    }
+
+    .header-container {
+        padding-top: 0px;
+    }
+    .col-9.col-md-6.my-auto {
+        padding-top: 116px;
+    }
+    body {
+        height: calc(100vh - 116px);
     }
 }
