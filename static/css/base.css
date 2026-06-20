@@ -60,6 +60,15 @@ body {
     background: #000 !important;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -107,5 +116,15 @@ body {
     .container.h-100,
     .row.h-100 {
         height: auto !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .list-inline-item .nav-link {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .navbar {
+        padding: 0.5rem 0.5rem;
     }
 }
