@@ -13,7 +13,7 @@ def update_on_save(sender, instance, created, **kwargs):
 
 
 @receiver(post_delete, sender=OrderLineItem)
-def update_on_save(sender, instance, **kwargs):
+def update_on_delete(sender, instance, **kwargs):
     # chris made a mistake here, this function should have
     # been called update_on_delete. He fixes this in an upcoming video.
     """
