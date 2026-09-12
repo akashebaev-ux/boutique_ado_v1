@@ -58,6 +58,9 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     'storages',
+
+    # New app
+    'chatbot',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,73 @@
+<div class="chatbot" id="chatbot">
+    <button
+        class="chatbot-toggle"
+        id="chatbot-toggle"
+        type="button"
+        aria-label="Open shopping assistant"
+    >
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <div class="chatbot-window" id="chatbot-window" hidden>
+
+        <div class="chatbot-header">
+            <div>
+                <strong>Boutique Assistant</strong>
+                <small>Online</small>
+            </div>
+
+            <button
+                id="chatbot-close"
+                type="button"
+                aria-label="Close shopping assistant"
+            >
+                &times;
+            </button>
+        </div>
+
+        <div
+            class="chatbot-messages"
+            id="chatbot-messages"
+            aria-live="polite"
+        >
+            <div class="chat-message bot-message">
+                Hi! 👋 I'm the Boutique Ado shopping assistant.
+                How can I help you today?
+            </div>
+        </div>
+
+        <div class="chatbot-suggestions">
+            <button data-message="Show me products">
+                Products
+            </button>
+
+            <button data-message="Tell me about delivery">
+                Delivery
+            </button>
+
+            <button data-message="What is your returns policy?">
+                Returns
+            </button>
+        </div>
+
+        <form id="chatbot-form">
+            <label for="chatbot-input" class="sr-only">
+                Message
+            </label>
+
+            <input
+                type="text"
+                id="chatbot-input"
+                maxlength="500"
+                autocomplete="off"
+                placeholder="Ask me something..."
+                required
+            >
+
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+
+    </div>
+</div>
