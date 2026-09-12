@@ -119,3 +119,28 @@
         width: calc(100vw - 24px);
     }
 }
+
+
+.chatbot-option-group,
+.chatbot-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 15px;
+}
+
+.chatbot-option-button,
+.chatbot-action-button {
+    border: 1px solid #000;
+    background: #fff;
+    padding: 7px 12px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.chatbot-option-button:hover,
+.chatbot-action-button:hover {
+    background: #000;
+    color: #fff;
+}
