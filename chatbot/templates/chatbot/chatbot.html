@@ -1,4 +1,6 @@
 <div class="chatbot" id="chatbot">
+
+    <!-- Floating chatbot button -->
     <button
         class="chatbot-toggle"
         id="chatbot-toggle"
@@ -8,10 +10,17 @@
         <i class="fas fa-comments"></i>
     </button>
 
-    <div class="chatbot-window" id="chatbot-window" hidden>
+    <!-- Chatbot window -->
+    <div
+        class="chatbot-window"
+        id="chatbot-window"
+        hidden
+    >
 
+        <!-- Header -->
         <div class="chatbot-header">
-            <div>
+
+            <div class="chatbot-header-info">
                 <strong>Boutique Assistant</strong>
                 <small>Online</small>
             </div>
@@ -23,51 +32,83 @@
             >
                 &times;
             </button>
+
         </div>
 
+        <!-- Messages -->
         <div
             class="chatbot-messages"
             id="chatbot-messages"
             aria-live="polite"
+            aria-relevant="additions"
         >
+
             <div class="chat-message bot-message">
                 Hi! 👋 I'm the Boutique Ado shopping assistant.
                 How can I help you today?
             </div>
+
         </div>
 
+        <!-- Quick suggestion buttons -->
         <div class="chatbot-suggestions">
-            <button data-message="Show me products">
+
+            <button
+                type="button"
+                data-message="Show me products"
+                class="chatbot-suggestion"
+            >
                 Products
             </button>
 
-            <button data-message="Tell me about delivery">
+            <button
+                type="button"
+                data-message="Tell me about delivery"
+                class="chatbot-suggestion"
+            >
                 Delivery
             </button>
 
-            <button data-message="What is your returns policy?">
+            <button
+                type="button"
+                data-message="What is your returns policy?"
+                class="chatbot-suggestion"
+            >
                 Returns
             </button>
+
         </div>
 
+        <!-- Message input -->
         <form id="chatbot-form">
-            <label for="chatbot-input" class="sr-only">
-                Message
+
+            <label
+                for="chatbot-input"
+                class="sr-only"
+            >
+                Type your message
             </label>
 
             <input
                 type="text"
                 id="chatbot-input"
+                name="message"
                 maxlength="500"
                 autocomplete="off"
                 placeholder="Ask me something..."
                 required
             >
 
-            <button type="submit">
+            <button
+                type="submit"
+                id="chatbot-send"
+                aria-label="Send message"
+            >
                 <i class="fas fa-paper-plane"></i>
             </button>
+
         </form>
 
     </div>
+
 </div>
