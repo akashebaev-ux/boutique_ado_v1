@@ -1,0 +1,38 @@
+[
+{
+  "model": "chatbot.knowledgeentry",
+  "pk": 1,
+  "fields": {
+    "title": "Delivery",
+    "content": "Orders are normally dispatched within 1–2 working days.",
+    "keywords": "delivery shipping dispatch postage",
+    "is_active": true,
+    "created_at": "2026-09-12T15:48:37.009Z",
+    "updated_at": "2026-09-12T15:48:37.009Z"
+  }
+},
+{
+  "model": "chatbot.knowledgeentry",
+  "pk": 2,
+  "fields": {
+    "title": "Returns",
+    "content": "Customers may return unused products according to the store return policy.",
+    "keywords": "return refund exchange unwanted product send back",
+    "is_active": true,
+    "created_at": "2026-09-12T15:49:10.743Z",
+    "updated_at": "2026-09-12T15:49:10.743Z"
+  }
+},
+{
+  "model": "chatbot.knowledgeentry",
+  "pk": 3,
+  "fields": {
+    "title": "Payment",
+    "content": "Boutique Ado accepts secure card payments through Stripe.",
+    "keywords": "payment card stripe checkout visa mastercard",
+    "is_active": true,
+    "created_at": "2026-09-12T15:49:49.923Z",
+    "updated_at": "2026-09-12T15:49:49.923Z"
+  }
+}
+]
